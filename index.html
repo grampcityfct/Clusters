@@ -397,9 +397,9 @@ function saveAs(uri, filename) {
 function party_style(feature) {
 return {
 fillColor: party_color(feature.properties.NCluster_t),
-color: "black",
-weight: 1,
-fillOpacity: 1
+color: party_color(feature.properties.NCluster_t),
+weight: 1.5,
+fillOpacity: 0.5
 };
 }
 
